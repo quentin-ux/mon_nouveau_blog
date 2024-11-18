@@ -1,0 +1,27 @@
+{% extends 'nauti/base.html' %}
+{% load static %} 
+{%block content%}
+{% if message != ''%}
+        <div class="alert alert-danger" role="alert">
+            {{message}}
+        </div>
+{% endif %}
+<img src="/character.photo/.jpg" alt="img_character"/>
+        <main class="container">
+            <div class="row">
+                <div class="col">
+                    <h2><b href="">{{ character }}</b></h2>
+                    <h2><c href="">Informations :</c></h2>
+                    <h2><d href="">Occupe le poste de {{ character.type }} de la Nauti</d></h2>
+                    <h2><d href="">Est actuellement {{ character.etat }}</d></h2>
+                    <h2><d href="">Se trouve à {{ character.lieu }}</d></h2>
+                    <form method="POST" class="post-form">{% csrf_token %}
+                        <b> Changer : </b> {{ form.as_ul }}
+                        <button type="submit" class="btn btn-outline-light">OK</button>
+                        <a href="{% url 'nauti_list' %}">Back</a>
+                    </form>
+                </div>
+            </div>
+        </main>
+{%endblock%}
+

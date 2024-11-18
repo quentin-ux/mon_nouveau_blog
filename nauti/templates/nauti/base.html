@@ -1,0 +1,30 @@
+{% load static %} 
+<html>
+    <head>
+        <title>NAUTI CAMPAGNE !</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> 
+        <link rel="stylesheet" href="{% static 'css/nauti.css' %}"> 
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css"> 
+    </head>
+    <body>
+        <header class="page-header">
+            <div class="container">
+            <h1><b href="/">NAUTILIST</b></h1>
+            </div>
+        </header>
+
+        <div>
+            <h2><b href="/">Simulation de gestion de la NAUTILIST</b></h2>
+            <p>Découvrez comment la meilleure liste de Centrale a quand même perdu les campagnes haut la main !</p>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

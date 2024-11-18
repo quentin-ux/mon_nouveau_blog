@@ -1,0 +1,19 @@
+{% extends 'nauti/base.html' %}
+{%block content%}
+<img src=".//equipement.photo/.jpg" alt="img_equipement"/>
+        <main class="container">
+            <div class="row">
+                <div class="col">
+                    <h2><b href="">{{ equipement }}</b></h2>
+                    <h2><b href="">Informations</b></h2>
+                    <h2><d href="">{{ equipement.disponibilite }}</d></h2>
+                    {% if message != ''%}
+                        <div>
+                            <h2><e href="">{{ message }}</e></h2>
+                        </div>
+                    {% endif %} 
+                </div>
+            </div>
+        </main>
+{%endblock%}
+

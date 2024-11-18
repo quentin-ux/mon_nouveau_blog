@@ -1,0 +1,29 @@
+h1 b, h2 b, h2 c { color: #15f371; font-family: 'Lobster'; } 
+h1 a, h2 a { color: #15f3e8;} 
+h1 d, h2 d { color: #10aca477;} 
+h1 e, h2 e { color: #0e93e08f; font-size: 15pt;} 
+
+.page-header {
+    background-color: #008bc2;
+    margin-top: 0;
+    margin-bottom: 60rem;
+    padding: 20rem 20rem 20rem 40rem;
+}
+
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+    color: #5211e9;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+    color: #5c0fd8;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20rem;
+}

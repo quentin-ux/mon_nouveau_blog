@@ -1,0 +1,26 @@
+{% extends 'nauti/base.html' %}
+
+{%block content%}
+       <h2><c href="">Lieux emblematiques</c></h2>
+
+        <main class="container">
+            <div class="row">
+                <div class="col">
+                    {% for equipement in Lieux_emblematiques %}
+                    <h2><a href="{% url 'lieu_detail' id_equip=equipement.id_equip %}">{{ equipement }}</a></h2>
+                    {% endfor %}
+                </div>
+            </div>
+        </main>
+
+        <h2><c href="">Nauti-membres</c></h2>
+
+        <main class="container">
+            <div class="row">
+                <div class="col">
+                    {% for character in Nauti_membres%}
+                            <h2><a href="{% url 'membre_detail' id_character=character.id_character %}">{{character}}</a></h2>
+                    {% endfor %}
+                </div>
+            </div>
+{%endblock%}
